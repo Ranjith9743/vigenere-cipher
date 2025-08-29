@@ -1,6 +1,6 @@
 # Vigenère Cipher
 
-This project is a Python implementation of the **Vigenère Cipher**, a classical method of encrypting alphabetic text by using a series of different Caesar ciphers based on the letters of a keyword.
+This project is a Python implementation of the **Vigenere Cipher**, a classical method of encrypting alphabetic text by using a series of different Caesar ciphers based on the letters of a keyword.
 
 ## Features
 - Encrypt plaintext using a keyword
