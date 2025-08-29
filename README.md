@@ -12,4 +12,5 @@ This project is a Python implementation of the **Vigenère Cipher**, a classical
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/vigenere-cipher.git
+git clone https://github.com/Ranjith9743/vigenere-cipher.git
+
