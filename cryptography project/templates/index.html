@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vigenère Cipher Tool</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #007BFF, #00C9A7);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .container {
+      background: white;
+      width: 100%;
+      max-width: 700px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    textarea, input, select {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background: #007BFF;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .output {
+      margin-top: 25px;
+    }
+
+    .output textarea {
+      background: #f9f9f9;
+      color: #333;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1> Vigenere Cipher Encryptor & Decryptor</h1>
+
+    <form method="POST">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="3" placeholder="Enter your text...">{{ message }}</textarea>
+
+      <label for="key">Key:</label>
+      <input type="text" id="key" name="key" placeholder="Enter key..." value="{{ key }}">
+
+      <label for="action">Action:</label>
+      <select name="action">
+        <option value="encrypt">Encrypt</option>
+        <option value="decrypt">Decrypt</option>
+      </select>
+
+      <button type="submit">Run Cipher</button>
+    </form>
+
+    <div class="output">
+      <label for="result">Result:</label>
+      <textarea id="result" rows="3" readonly>{{ result }}</textarea>
+    </div>
+
+    <footer>
+      Developed by Ranjith k | Vigenere Cipher Tool
+    </footer>
+  </div>
+
+</body>
+</html>
+
